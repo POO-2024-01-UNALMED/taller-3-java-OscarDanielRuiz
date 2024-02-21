@@ -77,4 +77,30 @@ public class TV {
 	public boolean getEstado() {
 		return estado;
 	}
+	
+	//Metodos cambio de canal y volumen
+	
+	public void canalUp() {
+		if (estado == true && canal < 120) {
+			canal++;
+		}
+	}
+	
+	public void canalDown() {
+		if (estado == true && canal > 1) {
+			canal--;
+		}
+	}
+	
+	public void volumenUp() {
+		if (estado == true && volumen < 7) {
+			volumen++;
+		}
+	}
+	
+	public void volumenDown() {
+		if (estado == true && volumen > 0) {
+			volumen--;
+		}
+	}
 }
