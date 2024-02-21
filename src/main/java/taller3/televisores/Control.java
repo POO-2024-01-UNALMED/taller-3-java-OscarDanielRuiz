@@ -39,7 +39,7 @@ public class Control {
 		}
 	}
 	
-	public void turnON() {
+	public void turnOn() {
 		tv.turnOn();
 	}
 	
