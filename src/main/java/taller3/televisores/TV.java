@@ -12,6 +12,7 @@ public class TV {
 	public TV(Marca marca, boolean estado) {
 		this.marca = marca;
 		this.estado = estado;
+		numTV++;
 	}
 	
 	//Metodos get y set
@@ -24,8 +25,11 @@ public class TV {
 	}
 	
 	public void setCanal(int canal) {
-		this.canal = canal;
+		if (estado == true && (canal <= 120 && canal >= 1)) {
+			this.canal = canal;
+		}
 	}
+
 	public int getCanal() {
 		return canal;
 	}
@@ -38,8 +42,11 @@ public class TV {
 	}
 	
 	public void setVolumen(int volumen) {
-		this.volumen = volumen;
+		if (estado == true && (volumen <= 7 && volumen >= 0)) {
+			this.volumen= volumen;
+		}
 	}
+		
 	public int getVolumen() {
 		return volumen;
 	}
